@@ -1,0 +1,32 @@
+//
+//  Production.xcconfig
+//  MoneyManagement
+//
+//  Created by Stephen Davis on 9/16/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Base.xcconfig"
+
+// App settings.
+APP_ENVIRONMENT = production
+APP_NAME = $(BASE_APP_NAME)
+PRODUCT_BUNDLE_IDENTIFIER = $BASE_APP_BUNDLE_ID
+APP_VERSION = $(BASE_APP_VERSION)
+
+// CloudKit settings.
+CLOUDKIT_CONTAINER = $(BASE_CLOUDKIT_CONTAINER)
+
+// Cocoapods environment setup.
+#include "Pods/Target Support Files/Pods-MoneyManagement/Pods-MoneyManagement.debug-production.xcconfig"
+#include "Pods/Target Support Files/Pods-MoneyManagement/Pods-MoneyManagement.release-production.xcconfig"
+#include "Pods/Target Support Files/Pods-MoneyManagement-MoneyManagementUITests/Pods-MoneyManagement-MoneyManagementUITests.debug-production.xcconfig"
+#include "Pods/Target Support Files/Pods-MoneyManagement-MoneyManagementUITests/Pods-MoneyManagement-MoneyManagementUITests.release-production.xcconfig"
+#include "Pods/Target Support Files/Pods-MoneyManagementTests/Pods-MoneyManagementTests.debug-production.xcconfig"
+#include "Pods/Target Support Files/Pods-MoneyManagementTests/Pods-MoneyManagementTests.release-production.xcconfig"
+
+// Firebase settings.
+GOOGLE_SERVICE_PLIST = $(BASE_GOOGLE_SERVICE_PLIST)
+GOOGLE_SERVICE_REVERSED_CLIENT_ID = com.googleusercontent.apps.14336556060-ftkau2vks6n1ov4qlsq0f5h44q4m4i52

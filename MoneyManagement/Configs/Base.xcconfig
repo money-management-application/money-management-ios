@@ -1,0 +1,20 @@
+//
+//  Base.xcconfig
+//  MoneyManagement
+//
+//  Created by Stephen Davis on 9/16/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Base settings.
+BASE_APP_NAME = MoneyManagement
+BASE_APP_BUNDLE_ID = com.webdavis.MoneyManagement
+BASE_APP_VERSION = 0.1
+
+// CloudKit settings.
+BASE_CLOUDKIT_CONTAINER = iCloud.com.webdavis.MoneyManagement
+
+// Firebase settings.
+BASE_GOOGLE_SERVICE_PLIST = GoogleService-Info

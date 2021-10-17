@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "money-management-development",
+    "staging": "money-management-staging",
+    "production": "money-management-production"
+  },
+  "targets": {}
+}

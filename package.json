@@ -1,0 +1,13 @@
+{
+  "name": "money-management",
+  "version": "0.1.0",
+  "description": "MoneyManagement for iOS",
+  "private": "true",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/money-management-application/money-management-ios.git"
+  },
+  "devDependencies": {
+    "firebase-tools": "^9.18.0"
+  }
+}

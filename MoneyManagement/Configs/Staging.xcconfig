@@ -1,0 +1,32 @@
+//
+//  Staging.xcconfig
+//  MoneyManagement
+//
+//  Created by Stephen Davis on 9/16/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Base.xcconfig"
+
+// App settings.
+APP_ENVIRONMENT = staging
+APP_NAME = $(BASE_APP_NAME) (staging)
+PRODUCT_BUNDLE_IDENTIFIER = $(BASE_APP_BUNDLE_ID).staging
+APP_VERSION = $(BASE_APP_VERSION)
+
+// CloudKit settings.
+CLOUDKIT_CONTAINER = $(BASE_CLOUDKIT_CONTAINER).staging
+
+// Cocoapods environment setup.
+#include "Pods/Target Support Files/Pods-MoneyManagement/Pods-MoneyManagement.debug-staging.xcconfig"
+#include "Pods/Target Support Files/Pods-MoneyManagement/Pods-MoneyManagement.release-staging.xcconfig"
+#include "Pods/Target Support Files/Pods-MoneyManagementTests/Pods-MoneyManagementTests.debug-staging.xcconfig"
+#include "Pods/Target Support Files/Pods-MoneyManagementTests/Pods-MoneyManagementTests.release-staging.xcconfig"
+#include "Pods/Target Support Files/Pods-MoneyManagement-MoneyManagementUITests/Pods-MoneyManagement-MoneyManagementUITests.debug-staging.xcconfig"
+#include "Pods/Target Support Files/Pods-MoneyManagement-MoneyManagementUITests/Pods-MoneyManagement-MoneyManagementUITests.release-staging.xcconfig"
+
+// Firebase settings.
+GOOGLE_SERVICE_PLIST = $(BASE_GOOGLE_SERVICE_PLIST)-Staging
+GOOGLE_SERVICE_REVERSED_CLIENT_ID = com.googleusercontent.apps.259265654046-fnnko5r5cq08bk4q6h49na4ge49j8fgp

@@ -1,0 +1,38 @@
+//
+//  Development.xcconfig
+//  MoneyManagement
+//
+//  Created by Stephen Davis on 9/16/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Base.xcconfig"
+
+// App settings.
+APP_ENVIRONMENT = development
+APP_NAME = $(BASE_APP_NAME) (development)
+PRODUCT_BUNDLE_IDENTIFIER = $(BASE_APP_BUNDLE_ID).development
+APP_VERSION = $(BASE_APP_VERSION)
+
+// CloudKit settings.
+CLOUDKIT_CONTAINER = $(BASE_CLOUDKIT_CONTAINER).development
+
+// Cocoapods environment setup.
+#include "Pods/Target Support Files/Pods-MoneyManagement/Pods-MoneyManagement.debug-development.xcconfig"
+#include "Pods/Target Support Files/Pods-MoneyManagement/Pods-MoneyManagement.release-development.xcconfig"
+#include "Pods/Target Support Files/Pods-MoneyManagementTests/Pods-MoneyManagementTests.debug-development.xcconfig"
+#include "Pods/Target Support Files/Pods-MoneyManagementTests/Pods-MoneyManagementTests.release-development.xcconfig"
+#include "Pods/Target Support Files/Pods-MoneyManagement-MoneyManagementUITests/Pods-MoneyManagement-MoneyManagementUITests.debug-development.xcconfig"
+#include "Pods/Target Support Files/Pods-MoneyManagement-MoneyManagementUITests/Pods-MoneyManagement-MoneyManagementUITests.release-development.xcconfig"
+
+// Firebase settings.
+GOOGLE_SERVICE_PLIST = $(BASE_GOOGLE_SERVICE_PLIST)-Development
+GOOGLE_SERVICE_REVERSED_CLIENT_ID = com.googleusercontent.apps.564871562343-8cdkb5vtijg0dpmonf4h8nck8n55n7bt
+
+// Firebase Emulator setup.
+FIREBASE_EMULATOR_URL = localhost
+FIREBASE_EMULATOR_FIRESTORE_PORT = 8080
+FIREBASE_EMULATOR_AUTH_PORT = 9099
+FIREBASE_EMULATOR_AUTH_PROJECT_ID = money-management-development
