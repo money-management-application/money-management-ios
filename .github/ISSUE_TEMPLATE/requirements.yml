@@ -1,0 +1,128 @@
+name: Requirements
+description: Create a requirements story
+title: "User Story: "
+labels: ["user story"]
+assignees:
+  - stephenalandavis
+body:
+  - type: markdown
+    id: heading
+    attributes:
+      value: |
+        # User Story(s)
+  - type: textarea
+    id: narrative-1
+    attributes:
+      label: Narrative 1
+      value: |
+        **As an** <"descriptor" user>,
+        **I want the app to** <do something>,
+        **so that** <something>.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        #### Acceptance Criteria
+        
+        ```
+        Given ,
+        When ,
+        Then ,
+        And .
+        ```
+        <br>
+  - type: textarea
+    id: narrative-2
+    attributes:
+      label: Narrative 2
+      value: |
+        **As an** <"descriptor" user>,
+        **I want the app to** <do something>,
+        **so that** <something>.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        #### Acceptance Criteria
+        
+        ```
+        Given ,
+        And ,
+        And ,
+        When ,
+        Then .
+        
+        Given ,
+        And ,
+        And ,
+        When ,
+        Then .
+        ```
+        ---
+        <br><br>
+  - type: markdown
+    attributes:
+      value: |
+        # Use Cases
+        
+        ## Something happens
+        
+        #### Data:
+        
+        - Type
+        
+        #### Primary course (happy path):
+        
+        - [ ] Execute "<action>" command with above data.
+        - [ ] System <responds>.
+        - [ ] System <delivers something>.
+        
+        #### result 1 - usability course (sad path):
+        
+        - [ ] System delivers invalid data usability message.
+        
+        #### result 2 - usability course (sad path):
+        
+        - [ ] System delivers connectivity usability message.
+        
+        
+        ---
+        <br><br>
+        # Flowchart
+        
+        insert screenshot of flow graph
+        
+        ---
+        <br><br>
+        # Model Specs
+        
+        ## Feed Transaction
+        
+        | Property      | Type                |
+        |:--------------|:--------------------|
+        | `var`         | `type`              |
+        
+        ## Payload Contract
+        
+        ```
+        GET *url* (TBD)
+        
+        200 RESPONSE
+        
+        {
+          "items": [
+            {
+              "key": "a value"
+            }
+        ...
+          ]
+        }
+        ```
+        
+        ---
+        <br><br>
+        # App Architecture
+        
+        insert screenshot of architecture graph
